@@ -33,12 +33,12 @@ while game_is_on:
         ball.bounce_y()
     elif ball.distance(player_one) < 50 and ball.xcor() > 320:
         ball.bounce_x()
-        ball.x_direction += 10
-        ball.y_direction += 10
+        ball.x_direction *= 1.5
+        ball.y_direction *= 1.5
     elif ball.distance(player_two) < 50 and ball.xcor() < -320:
         ball.bounce_x()
-        ball.x_direction += 10
-        ball.y_direction += 10
+        ball.x_direction *= 1.2
+        ball.y_direction *= 1.2
     elif ball.xcor() > 400:
         ball.reset()
         scoreboard.player_one_point()

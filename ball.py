@@ -24,6 +24,8 @@ class Ball(Turtle):
     def reset(self):
         self.goto(0,0)
         self.x_direction = -self.x_direction
+        self.x_direction = X_DIRECTION_SPEED
+        self.y_direction = Y_DIRECTION_SPEED
 
 
 
